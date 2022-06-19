@@ -16,7 +16,7 @@ public class BubbleSort {
 		int i = 0, j = arr.length - 1;
 		while (i < j) {
 			i = 0;
-			for (; i < arr.length - 1; i++) {
+			for (; i <j; i++) {  //change arr.length-1 to j ,   as j is last index of unsorted array window
 				if (arr[i] > arr[i + 1]) // curr is bigger swap
 				{
 					int temp = arr[i];
